@@ -1,0 +1,97 @@
+/* ==========================================================
+   estilos.css · Portfolio de Lucía Marín
+   Se carga DESPUÉS de Bootstrap 5.3
+   ========================================================== */
+
+/* 1. Variables de marca (sobrescriben las de Bootstrap) */
+:root {
+  --bs-primary: #1D4E89;            /* azul marino: 8,6:1 sobre blanco */
+  --bs-primary-rgb: 29, 78, 137;
+  --bs-link-color: #1D4E89;
+  --bs-link-color-rgb: 29, 78, 137;
+  --bs-link-hover-color: #123761;   /* 11,5:1 sobre blanco */
+  --bs-link-hover-color-rgb: 18, 55, 97;
+  --bs-body-color: #212529;
+  --bs-body-font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --marca-acento: #8A3B12;          /* terracota oscuro: 7,3:1 sobre blanco */
+  --marca-fondo-suave: #F1F5FA;     /* neutro azulado */
+}
+
+/* 2. Botones: mantienen el contraste AA con el color de marca */
+.btn-primary {
+  --bs-btn-bg: #1D4E89;
+  --bs-btn-border-color: #1D4E89;
+  --bs-btn-hover-bg: #123761;
+  --bs-btn-hover-border-color: #123761;
+  --bs-btn-active-bg: #0E2B4C;
+  --bs-btn-active-border-color: #0E2B4C;
+}
+.btn-outline-primary {
+  --bs-btn-color: #1D4E89;
+  --bs-btn-border-color: #1D4E89;
+  --bs-btn-hover-bg: #1D4E89;
+  --bs-btn-hover-border-color: #1D4E89;
+  --bs-btn-active-bg: #123761;
+  --bs-btn-active-border-color: #123761;
+}
+
+/* 3. Foco visible en toda la web */
+:focus-visible {
+  outline: 3px solid var(--marca-acento);
+  outline-offset: 2px;
+}
+
+/* 4. Navbar */
+.navbar-brand { font-weight: 700; letter-spacing: .01em; }
+
+/* 5. Portada */
+.portada { background: var(--marca-fondo-suave); }
+.avatar {
+  width: 11rem;
+  height: 11rem;
+  object-fit: cover;
+  border: .25rem solid #fff;
+}
+
+/* 6. Secciones */
+.seccion { scroll-margin-top: 4.5rem; }   /* compensa el navbar sticky */
+.seccion-alterna { background: var(--marca-fondo-suave); }
+.titulo-seccion { color: var(--marca-acento); font-weight: 700; }
+
+/* 7. Badges de tecnologías (texto blanco sobre azul: 8,6:1) */
+.badge-tec {
+  background: var(--bs-primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 8. Cards de proyecto */
+.card-proyecto .card-img-top { border-bottom: 1px solid var(--bs-border-color); }
+
+/* 9. Línea de tiempo de formación */
+.linea-tiempo { border-left: .25rem solid var(--bs-primary); padding-left: 1.25rem; }
+.linea-tiempo > li { position: relative; margin-bottom: 1.5rem; }
+.linea-tiempo > li::before {
+  content: "";
+  position: absolute;
+  left: -1.8rem;
+  top: .4rem;
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+  background: var(--marca-acento);
+}
+
+/* 10. Footer */
+.pie a { color: #fff; }
+.pie a:hover { color: #DCE6F2; }
+
+/* 11. Movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* 12. Pantallas >= 768px (breakpoint md de Bootstrap) */
+@media (min-width: 768px) {
+  .avatar { width: 14rem; height: 14rem; }
+}

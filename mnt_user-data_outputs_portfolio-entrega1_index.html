@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucía Marín · Desarrolladora web junior</title>
+  <meta name="description" content="Portfolio de Lucía Marín, desarrolladora web junior (CFGS DAW): proyectos con HTML, CSS, JavaScript, PHP y MySQL.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+  <a class="visually-hidden-focusable btn btn-light position-absolute m-2" href="#contenido">Saltar al contenido</a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">Lucía Marín</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="seccion portada py-5" aria-labelledby="t-inicio">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-4 text-center">
+            <img src="img/avatar.svg" class="avatar rounded-circle img-fluid" alt="Avatar ilustrado de Lucía Marín" width="224" height="224">
+          </div>
+          <div class="col-md-8">
+            <h1 id="t-inicio" class="display-5 fw-bold">Lucía Marín Ortega</h1>
+            <p class="fs-4 text-primary fw-semibold">Desarrolladora web junior · DAW</p>
+            <p class="lead">Estudio el ciclo de Desarrollo de Aplicaciones Web y me gusta convertir ideas en páginas claras, accesibles y que funcionan bien en cualquier dispositivo. Busco prácticas donde seguir aprendiendo en un equipo de desarrollo.</p>
+            <a href="#proyectos" class="btn btn-primary btn-lg me-2 mb-2">Ver proyectos</a>
+            <a href="docs/cv.pdf" class="btn btn-outline-primary btn-lg mb-2" download>Descargar CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="seccion py-5" aria-labelledby="t-hab">
+      <div class="container">
+        <h2 id="t-hab" class="titulo-seccion mb-4">Habilidades</h2>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <h3 class="h5"><i class="bi bi-window-stack" aria-hidden="true"></i> Front-end</h3>
+            <p class="d-flex flex-wrap gap-2"><span class="badge badge-tec">HTML5</span><span class="badge badge-tec">CSS3</span><span class="badge badge-tec">JavaScript</span><span class="badge badge-tec">Bootstrap 5</span></p>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <h3 class="h5"><i class="bi bi-server" aria-hidden="true"></i> Back-end</h3>
+            <p class="d-flex flex-wrap gap-2"><span class="badge badge-tec">PHP</span><span class="badge badge-tec">Node.js</span></p>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <h3 class="h5"><i class="bi bi-database" aria-hidden="true"></i> Bases de datos</h3>
+            <p class="d-flex flex-wrap gap-2"><span class="badge badge-tec">MySQL</span><span class="badge badge-tec">SQLite</span></p>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <h3 class="h5"><i class="bi bi-tools" aria-hidden="true"></i> Herramientas</h3>
+            <p class="d-flex flex-wrap gap-2"><span class="badge badge-tec">Git</span><span class="badge badge-tec">GitHub</span><span class="badge badge-tec">VS Code</span><span class="badge badge-tec">Figma</span></p>
+          </div>
+        </div>
+        <div class="row g-4 mt-1">
+          <div class="col-md-6">
+            <h3 class="h5">Idiomas</h3>
+            <ul class="mb-0"><li>Español: nativo</li><li>Inglés: B2 (lectura técnica fluida)</li></ul>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h5">Competencias transversales</h3>
+            <ul class="mb-0"><li>Trabajo en equipo con Git</li><li>Comunicación clara con clientes</li><li>Autonomía para aprender</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion seccion-alterna py-5" aria-labelledby="t-proy">
+      <div class="container">
+        <h2 id="t-proy" class="titulo-seccion mb-4">Proyectos</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="card card-proyecto h-100">
+              <img src="img/proyecto-tareas.svg" class="card-img-top img-fluid" alt="Captura de la aplicación de tareas con listas y filtros" width="400" height="250">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Gestor de tareas</h3>
+                <p class="card-text">Aplicación para crear, filtrar y completar tareas, con los datos guardados en el navegador.</p>
+                <p class="d-flex flex-wrap gap-2"><span class="badge badge-tec">HTML</span><span class="badge badge-tec">JavaScript</span><span class="badge badge-tec">Bootstrap</span></p>
+                <div class="mt-auto d-flex flex-wrap gap-2">
+                  <a href="https://lucia-marin-dev.github.io/gestor-tareas/" class="btn btn-sm btn-primary" target="_blank" rel="noopener">Ver demo<span class="visually-hidden"> del gestor de tareas</span></a>
+                  <a href="https://github.com/lucia-marin-dev/gestor-tareas" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">Repositorio<span class="visually-hidden"> del gestor de tareas</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card card-proyecto h-100">
+              <img src="img/proyecto-recetas.svg" class="card-img-top img-fluid" alt="Captura del buscador de recetas con tarjetas de platos" width="400" height="250">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Recetario con PHP</h3>
+                <p class="card-text">Web de recetas con registro de usuarios, búsqueda por ingredientes y panel para añadir platos.</p>
+                <p class="d-flex flex-wrap gap-2"><span class="badge badge-tec">PHP</span><span class="badge badge-tec">MySQL</span><span class="badge badge-tec">CSS</span></p>
+                <div class="mt-auto d-flex flex-wrap gap-2">
+                  <a href="https://lucia-marin-dev.github.io/recetario/" class="btn btn-sm btn-primary" target="_blank" rel="noopener">Ver demo<span class="visually-hidden"> del recetario</span></a>
+                  <a href="https://github.com/lucia-marin-dev/recetario" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">Repositorio<span class="visually-hidden"> del recetario</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card card-proyecto h-100">
+              <img src="img/proyecto-gimnasio.svg" class="card-img-top img-fluid" alt="Captura de la web de un gimnasio con horarios y tarifas" width="400" height="250">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Web de un gimnasio</h3>
+                <p class="card-text">Sitio responsive con horarios, tarifas y formulario de contacto, maquetado con la rejilla de Bootstrap.</p>
+                <p class="d-flex flex-wrap gap-2"><span class="badge badge-tec">Bootstrap</span><span class="badge badge-tec">HTML</span><span class="badge badge-tec">Git</span></p>
+                <div class="mt-auto d-flex flex-wrap gap-2">
+                  <a href="https://lucia-marin-dev.github.io/gimnasio/" class="btn btn-sm btn-primary" target="_blank" rel="noopener">Ver demo<span class="visually-hidden"> de la web del gimnasio</span></a>
+                  <a href="https://github.com/lucia-marin-dev/gimnasio" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">Repositorio<span class="visually-hidden"> de la web del gimnasio</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacion" class="seccion py-5" aria-labelledby="t-form">
+      <div class="container">
+        <h2 id="t-form" class="titulo-seccion mb-4">Formación y experiencia</h2>
+        <ol class="linea-tiempo list-unstyled">
+          <li><h3 class="h5 mb-0">CFGS Desarrollo de Aplicaciones Web</h3><p class="mb-0">IES Ciudad de Madrid · 2025 – 2027 (en curso)</p></li>
+          <li><h3 class="h5 mb-0">Curso de Git y GitHub</h3><p class="mb-0">Plataforma online · 2026 · 20 horas</p></li>
+          <li><h3 class="h5 mb-0">Prácticas FFEOE</h3><p class="mb-0">Pendiente de asignar · 2027</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion seccion-alterna py-5" aria-labelledby="t-cont">
+      <div class="container">
+        <h2 id="t-cont" class="titulo-seccion mb-4">Contacto</h2>
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <form id="form-contacto">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" autocomplete="email">
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            </form>
+          </div>
+          <div class="col-lg-5">
+            <h3 class="h5">También me encuentras aquí</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-envelope" aria-hidden="true"></i> <a href="mailto:lucia.marin.dev@example.com">lucia.marin.dev@example.com</a></li>
+              <li class="mb-2"><i class="bi bi-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/lucia-marin-dev" target="_blank" rel="noopener">Perfil de LinkedIn</a></li>
+              <li><i class="bi bi-github" aria-hidden="true"></i> <a href="https://github.com/lucia-marin-dev" target="_blank" rel="noopener">Perfil de GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0">© 2026 Lucía Marín Ortega · Última actualización: 16 de noviembre de 2026</p>
+      <div class="d-flex gap-3 fs-4">
+        <a href="https://github.com/lucia-marin-dev" target="_blank" rel="noopener" aria-label="GitHub de Lucía Marín"><i class="bi bi-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/lucia-marin-dev" target="_blank" rel="noopener" aria-label="LinkedIn de Lucía Marín"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+        <a href="mailto:lucia.marin.dev@example.com" aria-label="Enviar correo a Lucía Marín"><i class="bi bi-envelope" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
